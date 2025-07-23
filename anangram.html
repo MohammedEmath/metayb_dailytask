@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anangram Checker</title>
+</head>
+<body>
+
+<h2>Anangram Checker</h2>
+
+<input type="text" id="input1" placeholder="Enter a string 1">
+<input type="text" id="input2" placeholder="Enter a string 2">
+<br><br>
+
+<button onclick="checkAnangram()">Check</button>
+
+<p id="result"></p>
+
+<script>
+  function checkAnangram() {
+    let str1 = document.getElementById("input1").value;
+    let str2 = document.getElementById("input2").value;
+    if(str1.length===str2.length){
+        let S1= str1.toLowerCase().split("").sort(); 
+      let S2 = str2.toLowerCase().split("").sort(); 
+      let sorteds1=S1.toString();
+      let sorteds2=S2.toString();
+      
+    
+
+    if (sorteds1==sorteds2) {
+      document.getElementById("result").innerText = `The given strings ${str1} and ${str2} are anangrams.`;
+    }
+     else {
+      document.getElementById("result").innerText = `The given strings ${str1} and ${str2} are  not anangrams.`;
+    }
+        
+    }
+    else{
+        document.getElementById("result").innerHTML="Both strings have not same length.So annagram is impossible."
+    }
+    
+     
+    }
+  
+</script>
+
+</body>
+</html
