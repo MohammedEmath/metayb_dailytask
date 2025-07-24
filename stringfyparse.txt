@@ -1,0 +1,5 @@
+let shal={
+    id:102,
+    emname:"jack",
+    atten:"present",
+};
