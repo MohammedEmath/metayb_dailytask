@@ -36,5 +36,22 @@ console.log("PRICE:",cost,"\n");
 
 console.log("ORDER STATUS:");
 const{orderstatus}=amazon;
-console.log("The Product is",orderstatus,"to",custname);
+console.log("The Product is",orderstatus,"to",custname,'\n');
 
+//using spread operator
+console.log("Merge array and clone object using Spread operator:")
+const user = { name: 'Alice', age: 25 };
+console.log("Shallow Copy:");
+const user12=user;
+console.log(user12);
+console.log("Clone Object Using Spread Operator:")
+const objclone={...user};
+console.log(objclone,'\n');
+
+const arr1=[221,234,355];
+const arr2=['asd','asf'];
+console.log(arr1);
+console.log(arr2);
+console.log("Merge two arrays:")
+const arr3=[...arr1,'sjsc',...arr2];
+console.log(arr3);

@@ -13,7 +13,7 @@ students.forEach(student => {
 
 //filter
 console.log("Stuents who has more than grade 70");
-const above70=students.filter(std=>std.grade>70);
+const above70 = students.filter(std => std.grade > 70);
 console.log(above70);
 
 //find (by id)
@@ -22,12 +22,13 @@ const foundStudent = students.find(s => s.id === studentIdToFind);
 console.log(`\nStudent with ID ${studentIdToFind}:`, foundStudent);
 
 //every
-let adults=students.every(std=>std.age>18);
-console.log("All the students are adults or not..",adults);
+const check = (std) => std.age > 18
+let adults = students.every(check);
+console.log("All the students are adults or not..", adults);
 
 //slice
 console.log("Slicing Methods");
-console.log(students.slice(1,4));
+console.log(students.slice(1, 4));
 console.log(students.slice(-2));
 
 //sort
@@ -35,27 +36,27 @@ const sortedByGrade = students.sort((a, b) => a.grade - b.grade);
 console.log(sortedByGrade);
 
 //some
-let fail=students.some(std=>std.grade<60);
-console.log("Some students have less than 60 grade..",fail);
+let fail = students.some(std => std.grade < 60);
+console.log("Some students have less than 60 grade..", fail);
 
 //map
 console.log("Maapped Student Names:");
-let mapstd=students.map(std=>std.name);
+let mapstd = students.map(std => std.name);
 console.log(mapstd);
 
 //shift and unshift
 
-let std=[
-  {name:"babu",roll:32,grade:"A"},
-  {name:"abdul",roll:42,grade:"C"}
+let std = [
+  { name: "babu", roll: 32, grade: "A" },
+  { name: "abdul", roll: 42, grade: "C" }
 ];
 std.shift();
 console.log(std);
-std.unshift({name:"babu",roll:32,grade:"A"});
+std.unshift({ name: "babu", roll: 32, grade: "A" });
 console.log(std);
 
 //push and pop
-std.push({name:"arun",roll:21,grade:"B"});
+std.push({ name: "arun", roll: 21, grade: "B" });
 console.log(std);
 std.pop();
 console.log(std);
