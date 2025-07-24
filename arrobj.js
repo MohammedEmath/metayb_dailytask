@@ -44,6 +44,7 @@ let mapstd=students.map(std=>std.name);
 console.log(mapstd);
 
 //shift and unshift
+
 let std=[
   {name:"babu",roll:32,grade:"A"},
   {name:"abdul",roll:42,grade:"C"}
