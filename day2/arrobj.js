@@ -13,7 +13,7 @@ students.forEach(student => {
 
 //filter
 console.log("Stuents who has more than grade 70");
-const above70 = students.filter(std => std.grade > 70);
+const above70 = students.filter((std) => std.grade > 70);
 console.log(above70);
 
 //find (by id)
